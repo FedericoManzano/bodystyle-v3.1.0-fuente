@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/bodystyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <a  class="btn fd-rojo dropdown-toggle" data-pos="abajo" data-evt="hover" data-target="#drop2">Boton</a>
+
+    <!-- LISTA -->
+    <div  id="drop2"  class="dropdown">
+       
+        <a>Trabajo</a>
+        <a>Amigos</a>
+        <a>Parque</a>
+       
+    </div>
+    <a  class="btn fd-rojo com-trigger" data-pos="abajo" data-evt="hover" data-info="Boton de bodystyle css para personalizar este elemento tan utilizado">Boton</a>
+
+     <!-- LISTA DROPDOWN -->
+     <div  id="drop1"  class="dropdown"> <!-- id === data-target -->
+        <a>Perfil</a>
+        <a>Servicios</a>
+        <a>Salir</a>
+     </div>
+      
+    
+    <script src="../dist/js/bodystyle.js"></script>
+    <script>BS.ToolTipsInit()</script>
+</body>
+
+
+</html>
