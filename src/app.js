@@ -1,12 +1,13 @@
 
 
 /*!
- * BodyStyle v3.0.0
+ * BodyStyle v3.1.0
  * Copyright Federico Manzano
  * Licencia MIT
- * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.0.0-fuente)
+ * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.1.0-fuente)
  */
 
+import "../dist/css/bodystyle.css";
 import Modal from "./modulos/Modal"
 import Waves from  "./modulos/Waves"
 import DropDown from "./modulos/Dropdown"

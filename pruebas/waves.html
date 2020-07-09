@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/css/bodystyle.css">
+  
     <title>Document</title>
 </head>
 <body>
 
 
-    <a  class="btn fd-rojo dropdown-toggle" data-pos="abajo" data-evt="hover" data-target="#drop2">Boton</a>
+    <a  class="btn fd-rojo dropdown-toggle" data-pos="derecha" data-evt="hover" data-target="#drop2">Boton</a>
 
     <!-- LISTA -->
     <div  id="drop2"  class="dropdown">
@@ -19,7 +19,12 @@
         <a>Parque</a>
        
     </div>
-    <a  class="btn fd-rojo com-trigger" data-pos="abajo" data-evt="hover" data-info="Boton de bodystyle css para personalizar este elemento tan utilizado">Boton</a>
+    <a  
+        class="btn fd-rojo com-trigger" 
+        data-pos="derecha" 
+        data-evt="click" 
+        data-info="Boton de bodystyle css para personalizar este elemento tan utilizado">Boton
+    </a>
 
      <!-- LISTA DROPDOWN -->
      <div  id="drop1"  class="dropdown"> <!-- id === data-target -->
@@ -29,7 +34,7 @@
      </div>
       
     
-    <script src="../dist/js/bodystyle.js"></script>
+    <script src="../dist/js/bodystyle.bundle.js"></script>
     <script>BS.DropDownInit()</script>
 </body>
 
