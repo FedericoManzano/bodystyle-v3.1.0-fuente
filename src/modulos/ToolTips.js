@@ -1,18 +1,18 @@
 
-import "dynamics-tips/dist/js/dynamics.bundle.min"
+import Tips from "dynamics-tips/src/modulos/ToolTips"
 
 (function(){
 
 
     const inicializar = () => {
-       
+       Tips.iniciar()
     }
 
     var ToolTips = {
         iniciar: () => {
             inicializar()
         },
-        destroy: () => destroy()
+        destroy: () => Tisp.destroy()
     }
 
     window.ToolTips = ToolTips;

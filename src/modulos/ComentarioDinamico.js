@@ -1,12 +1,13 @@
-import "dynamics-tips/dist/js/dynamics.bundle.min"
+import Comentarios from "dynamics-tips/src/modulos/ComentariosDinamicos"
 
 (function(){
     const inicializar = () => {
-       
+        Comentarios.iniciar()
     }
 
     const ComentarioDinamico = {
-        iniciar: () => inicializar()
+        iniciar: () => inicializar(),
+        destroy: () => Comentarios.destroy()
     }
 
     window.ComentarioDinamico = ComentarioDinamico

@@ -1,10 +1,13 @@
-import "dynamics-tips/dist/js/dynamics.bundle.min"
+import Drop from "dynamics-tips/src/modulos/DropDown"
 
 (function () {
 
     const DropDown = {
         iniciar: () => {
+            Drop.iniciar()
         },
+
+        destroy: () => Drop.destroy()
     }
 
     window.DropDown = DropDown
