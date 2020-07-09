@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+ 
     <title>Document</title>
 </head>
 <body>
 
 
-    <a  class="btn fd-rojo dropdown-toggle" data-pos="derecha" data-evt="hover" data-target="#drop2">Boton</a>
+   
+    <div id="l-acordeon2">
+        <div class="lista-contenedor l-colapso mar-2" style="width: 50%">
+            <div class="lista-cabecera">
+                Cabecera
+            </div>
+            <div class="lista-item desactivado e-borde-izq-gris-4">
+                <a>Elemento1</a>
+            </div>
+            <div class="desplegable " id="4">
+                <p class="fz-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi deserunt aperiam maiores nobis quasi repellat debitis sapiente accusamus ut perferendis numquam voluptatibus, harum reprehenderit! Asperiores impedit rem modi debitis excepturi.</p>
+            </div>
+            <div class="lista-item e-borde-izq-rojo-4" data-target="#5">
+                <a >Elemento2</a>
+            </div>
+            <div class="desplegable" id="5">
+            <ul>
+                <li><a>Servicios</a></li>
+                <li><a>Porfolio</a></li>
+                <li><a>Actividades</a></li>
+            </ul>
+            </div>
+            <div class="lista-item e-borde-izq-rojo-4" data-target="#6">
+                <a>Elemento3</a>
+            </div>
+            <div class="desplegable" id="6">
+                <p class="fz-14">Esto es texto desplegable número 3</p>
+            </div>
+            <div class="lista-pie">
+                Pie de la lista
+            </div>
+        </div>
+    </div> 
 
-    <!-- LISTA -->
-    <div  id="drop2"  class="dropdown">
-       
-        <a>Trabajo</a>
-        <a>Amigos</a>
-        <a>Parque</a>
-       
-    </div>
-    <a  
-        class="btn fd-rojo com-trigger" 
-        data-pos="derecha" 
-        data-evt="click" 
-        data-info="Boton de bodystyle css para personalizar este elemento tan utilizado">Boton
-    </a>
-
-     <!-- LISTA DROPDOWN -->
-     <div  id="drop1"  class="dropdown"> <!-- id === data-target -->
-        <a>Perfil</a>
-        <a>Servicios</a>
-        <a>Salir</a>
-     </div>
       
     
     <script src="../dist/js/bodystyle.bundle.js"></script>
-    <script>BS.DropDownInit()</script>
+    <script>BS.Colecciones().iniciar({contexto: "#l-acordeon2", colorFondo: "fd-gris-az", colorTexto: "c-blanco", colorFlechas: "#fff"})</script>
+    
 </body>
 
 
