@@ -24,7 +24,6 @@
   "style": "dist/css/bodystyle.css",
   "sass": "sass/bodystyle.scss",
   "dependencies": {
-    "dynamics-tips": "^1.1.1",
     "jquery": "^3.5.0",
     "show-sintax": "^1.1.1"
   },

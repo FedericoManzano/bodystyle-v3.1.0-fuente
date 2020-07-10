@@ -3,50 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css">
+   
     <title>Document</title>
 </head>
 <body>
 
 
-   
-    <div id="l-acordeon2">
-        <div class="lista-contenedor l-colapso mar-2" style="width: 50%">
-            <div class="lista-cabecera">
-                Cabecera
-            </div>
-            <div class="lista-item desactivado e-borde-izq-gris-4">
-                <a>Elemento1</a>
-            </div>
-            <div class="desplegable " id="4">
-                <p class="fz-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi deserunt aperiam maiores nobis quasi repellat debitis sapiente accusamus ut perferendis numquam voluptatibus, harum reprehenderit! Asperiores impedit rem modi debitis excepturi.</p>
-            </div>
-            <div class="lista-item e-borde-izq-rojo-4" data-target="#5">
-                <a >Elemento2</a>
-            </div>
-            <div class="desplegable" id="5">
-            <ul>
-                <li><a>Servicios</a></li>
-                <li><a>Porfolio</a></li>
-                <li><a>Actividades</a></li>
-            </ul>
-            </div>
-            <div class="lista-item e-borde-izq-rojo-4" data-target="#6">
-                <a>Elemento3</a>
-            </div>
-            <div class="desplegable" id="6">
-                <p class="fz-14">Esto es texto desplegable número 3</p>
-            </div>
-            <div class="lista-pie">
-                Pie de la lista
-            </div>
-        </div>
-    </div> 
+   <div class="contenedor">
+    <div class="d-flex flex-wrap just-cobertura">
+        <a class="btn fd-azul tips-ele"
+        data-pos="arriba" data-tips="Soy un Tips !!!">Arriba</a>
+
+        <a class="btn fd-azul tips-ele"
+        data-pos="abajo" data-tips="Soy un Tips !!!">Abajo</a>
+
+        <a class="btn fd-azul tips-ele"
+        data-pos="izquierda" data-tips="Soy un Tips !!!">Izquierda</a>
+
+        <a class="btn fd-azul tips-ele"
+        data-pos="derecha" data-tips="Soy un Tips !!!">derecha</a>
+
+    </div>
+   </div>
+    
 
       
     
     <script src="../dist/js/bodystyle.bundle.js"></script>
-    <script>BS.Colecciones().iniciar({contexto: "#l-acordeon2", colorFondo: "fd-gris-az", colorTexto: "c-blanco", colorFlechas: "#fff"})</script>
+    <script>BS.ToolTipsInit()</script>
     
 </body>
 
